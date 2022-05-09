@@ -6,6 +6,7 @@ Wanted to see some simple forms of encryption and found the xor-cipher. Here is 
 ## Build guide
 ```
 git clone <this repo>
+cd xor_cipher
 mkdir build
 cd build
 cmake ..
