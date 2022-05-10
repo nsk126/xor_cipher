@@ -14,7 +14,11 @@ void cipher(int key, char* txt)
 
 int main(int a, char** v) {
     
-    
+    if (a != 2)
+    {
+        std::cerr << "Requires One argument as input.\n";
+        return -1;
+    }
 
     int randomCipher = 64014; // Add your custom cipher here
 
@@ -27,6 +31,6 @@ int main(int a, char** v) {
     cipher(randomCipher, toC);
     std::cout << toC << std::endl; // Will print the decrypted string
     
-    
+    return 0;
 
 }
